@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="pplanner">
+<head>
+	<title>&pi;Planneer</title>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+	<script src="/app.js"></script>
+	<script src="/services.js"></script>
+	<script src="/controllers.js"></script>
+</head>
+
+<body>
+	<div class="menu" ng-controller="MenuCtrl">
+		<ul>
+			<li ng-repeat="(title, href) in links">
+				<a ng-href="{{ href }}">{{title}}</a>
+			</li>
+		</ul>
+	</div>
+
+	<div ng-view>
+
+	</div>
+</body>
+</html>

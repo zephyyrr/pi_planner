@@ -1,0 +1,7 @@
+<h2> {{name}}'s Projects </h2>
+
+<ul>
+	<li ng-repeat="project in projects">
+		<a ng-href="/projects/{{project.name}}">{{ project.name }}</a>
+	</li>
+</ul>
